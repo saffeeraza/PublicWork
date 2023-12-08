@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Scheduler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Meeting Scheduler and Organizer</h1>
+    <div id="meetingForm">
+      <input type="text" id="meetingTitle" placeholder="Meeting Title" />
+      <input type="datetime-local" id="meetingTime" />
+      <textarea id="meetingAgenda" placeholder="Meeting Agenda"></textarea>
+      <button onclick="addMeeting()">Schedule Meeting</button>
+    </div>
+    <ul id="meetingList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>

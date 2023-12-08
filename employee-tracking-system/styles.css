@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: whitesmoke;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"], 
+.task-input input[type="number"], 
+.task-input input[type="date"], 
+.task-input textarea {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.task-input button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input button:hover {
+    background-color: #45a049;
+}
+
+ul#taskList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li.task {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.task.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-info {
+    flex-grow: 1;
+}
+
+.task-title {
+    font-weight: bold;
+    display: block;
+}
+
+.task-details,
+.task-hours,
+.task-deadline {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.task-actions button {
+    padding: 6px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.task-actions button:hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .task-input {
+        width: 100%;
+    }
+}
